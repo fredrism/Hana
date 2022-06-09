@@ -1,0 +1,33 @@
+class vec2f
+{
+public:
+	x, y: f32;
+
+	func vec3f(x: f32, y: f32)
+	{
+		this.x = x;
+		this.y = y;
+	}
+
+	func mul(number: f32): vec3f
+	{
+		this.x *= number;
+		this.y *= number;
+
+		return this;
+	}
+}
+
+extern print(obj: any);
+
+func main(): void
+{
+	i: i32 = 14;
+	j: i32 = 43;
+
+	word: string = "hello";
+
+	k = i + j * 230.5131;
+
+	print(k);
+}
